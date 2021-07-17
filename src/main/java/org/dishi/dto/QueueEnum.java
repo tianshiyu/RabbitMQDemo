@@ -1,5 +1,6 @@
 package org.dishi.dto;
 
+<<<<<<< HEAD
 import lombok.Getter;
 
 @Getter
@@ -31,4 +32,7 @@ public enum QueueEnum {
         this.name = name;
         this.routeKey = routeKey;
     }
+=======
+public enum QueueEnum {
+>>>>>>> RabbitMQ项目初始
 }

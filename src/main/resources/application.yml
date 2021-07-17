@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    host: localhost # rabbitmq的连接地址
+    port: 5672 # rabbitmq的连接端口号
+    virtual-host: /mall # rabbitmq的虚拟host
+    username: mall # rabbitmq的用户名
+    password: mall # rabbitmq的密码
+
+  mail:
+    protocol: smtp
+    host: smtp.163.com
+    port: 25
+    username: zx163321@163.com
+    password: EEDIOKZTDFQMVOQV
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 25000
+        debug: true

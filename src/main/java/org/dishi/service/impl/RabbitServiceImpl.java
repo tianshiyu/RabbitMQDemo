@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class RabbitServiceImpl implements RabbitService {
 
-    private AmqpTemplate rabbitTemplate;
+    private final AmqpTemplate rabbitTemplate;
 
     @Override
     public void sendMessage(EmailMessage message) {

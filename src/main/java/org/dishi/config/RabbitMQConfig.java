@@ -71,7 +71,7 @@ public class RabbitMQConfig {
         return BindingBuilder
                 .bind(emailTtlQueue)
                 .to(emailTtlDirect)
-                .with(QueueEnum.QUEUE_EMAIL.getRouteKey());
+                .with(QueueEnum.QUEUE_TTL_EMAIL.getRouteKey());
     }
 
     /**

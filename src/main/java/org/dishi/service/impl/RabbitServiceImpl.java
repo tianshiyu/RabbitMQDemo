@@ -18,7 +18,7 @@ public class RabbitServiceImpl implements RabbitService {
 
     @Override
     public void sendMessage(EmailMessage message) {
-        sendTtlMessage(message, 0);
+        rabbitTemplate.convertAndSend(QueueEnum.QUEUE_EMAIL.getExchange(), QueueEnum.QUEUE_EMAIL.getRouteKey(), message);
     }
 
     @Override
